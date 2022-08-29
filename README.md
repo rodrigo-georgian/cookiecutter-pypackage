@@ -54,12 +54,12 @@ Check out the [Poetry] documentation for more information on the available comma
 
 When you first push to GitHub, it'll start a `ci` GitHub workflow that you can see in the "Actions" tab of your repository. This workflow runs a couple of jobs:
 
-- The `test` job will run your test suite with Pytest against all Python version from 3.7 to 3.9
+- The `test` job will run your test suite with Pytest against all Python version 3.9
 - A few things will run in the lint job:
   - black in check mode
   - isort in check mode
   - flake8
-  - pyupgrade for Python 3.7+
+  - pyupgrade for Python 3.9
 
 A `labels` workflow will also run and synchronise the GitHub labels based on the `.github/labels.toml` file.
 
@@ -108,48 +108,6 @@ The project dependencies are kept up to date with [Renovate] which requires [the
 
 The main advantage of Renovate over Dependabot is the auto-merge option, which is configured to automatically merge minor/patch updates with all the CI checks passing. It supports a variety of package managers, including Poetry, GitHub actions and pre-commit hooks which are used by default.
 
-### All contributors
-
-This is a specification that help you highlight every open source contribution in your README. This is easy to maintain as it comes with a GitHub bot to do the updates for you, so more manual updates on the contributors file.
-
-If you never used it before, you will have to [install the Github app][all-contribs-install] and give it access to your repo.
-
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://browniebroke.com/"><img src="https://avatars.githubusercontent.com/u/861044?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Bruno Alla</b></sub></a><br /><a href="https://github.com/browniebroke/cookiecutter-pypackage/commits?author=browniebroke" title="Code">💻</a> <a href="#ideas-browniebroke" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/browniebroke/cookiecutter-pypackage/commits?author=browniebroke" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://cloudreactor.io/"><img src="https://avatars.githubusercontent.com/u/1079646?v=4?s=80" width="80px;" alt=""/><br /><sub><b>Jeff Tsay</b></sub></a><br /><a href="https://github.com/browniebroke/cookiecutter-pypackage/commits?author=jtsay362" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-[poetry]: https://python-poetry.org/
-[black]: https://github.com/psf/black
-[flake8]: https://pypi.org/project/flake8/
-[isort]: https://pypi.org/project/isort/
-[pre-commit]: https://pre-commit.com/
-[renovate]: https://docs.renovatebot.com/
-[renovate-gh-app]: https://github.com/apps/renovate
-[all-contributors]: https://github.com/all-contributors/all-contributors
-[conventional-commits]: https://www.conventionalcommits.org
-[python-semantic-release]: https://github.com/relekang/python-semantic-release
-[myst]: https://myst-parser.readthedocs.io
-[pylabels]: https://github.com/hackebrot/labels
-[gh-secrets]: https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
-[codecov]: https://codecov.io/
-[pypi]: https://pypi.org/
-[create-pat]: https://github.com/settings/tokens/new?scopes=repo
-[rtd-dashboard]: https://readthedocs.org/dashboard/
-[all-contribs-install]: https://allcontributors.org/docs/en/bot/installation
+Forked from: [browniebroke/cookiecutter-pypackage](https://github.com/browniebroke/cookiecutter-pypackage)
