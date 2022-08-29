@@ -1,23 +1,20 @@
 {
-  "full_name": "Bruno Alla",
-  "email": "bruno.alla@example.com",
-  "github_username": "browniebroke",
+  "full_name": "Georgian Developer",
+  "email": "developer@georgian.io",
+  "github_username": "dev-georgian",
   "project_name": "Python Package",
   "project_slug": "{{ cookiecutter.project_name | slugify }}",
   "package_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
-  "project_short_description": "My Python package to help you get up to speed.",
-  "version": "0.0.1",
-  "open_source_license": [
-    "MIT",
-    "Apache Software License 2.0",
-    "GNU General Public License v3",
-    "Not open source"
-  ],
+  "project_short_description": "My Python package.",
+  "version": "0.1.0",
+  "open_source_license": "Not open source",
   "documentation": "y",
   "run_poetry_install": "n",
   "initial_commit": "n",
   "setup_github": "n",
   "setup_pre_commit": "n",
   "add_me_as_contributor": "n",
-  "_extensions": ["cookiecutter.extensions.SlugifyExtension"]
+  "_extensions": [
+    "cookiecutter.extensions.SlugifyExtension"
+  ]
 }
