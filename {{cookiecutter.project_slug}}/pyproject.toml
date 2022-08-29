@@ -6,7 +6,6 @@ authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
 license = "{{ cookiecutter.open_source_license }}"
 readme = "README.md"
 repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
-{%- if cookiecutter.documentation == 'y' %}
 documentation = "https://{{ cookiecutter.project_slug }}.readthedocs.io"
 {%- endif %}
 classifiers = [
@@ -48,6 +47,12 @@ docs = [
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"
 pytest-cov = "^3.0"
+pylint = "^2.10.2"
+autopep8 = "^1.5.7"
+visdom = "^0.1.8"
+jsonpatch = "^1.32"
+rich = "^10.9.0"
+cookiecutter = "^1.7.3"
 
 [tool.semantic_release]
 branch = "main"
