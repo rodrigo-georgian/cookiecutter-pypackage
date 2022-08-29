@@ -1,7 +1,9 @@
 {
-  "full_name": "Georgian Developer",
-  "email": "developer@georgian.io",
-  "github_username": "dev-georgian",
+  "first_name": "Georgian",
+  "last_name": "Developer",
+  "full_name": "{{cookiecutter.first_name}} {{cookiecutter.last_name}}",
+  "email": "{{cookiecutter.first_name | slugify}}@georgian.io",
+  "github_username": "{{cookiecutter.first_name | slugify}}-georgian",
   "project_name": "Python Package",
   "project_slug": "{{ cookiecutter.project_name | slugify }}",
   "package_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
