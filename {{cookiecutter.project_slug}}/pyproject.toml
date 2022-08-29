@@ -25,7 +25,11 @@ packages = [
 "Changelog" = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "3.9"
+torch = "^1.12.1"
+pytorch-lightning = "^1.7.3"
+torchvision = "^0.13.1"
+torchmetrics = "^0.9.3"
 {%- if cookiecutter.documentation == 'y' %}
 
 # Documentation Dependencies
